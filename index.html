@@ -10,10 +10,95 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <div class="hero">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+
+            <!--  Show this only on mobile to medium screens  -->
+            <a class="navbar-brand d-lg-none " href="#"><img src="assets/img/Logo.png" alt="Header Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--  Use flexbox utility classes to change how the child elements are justified  -->
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarToggle">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active header-typography" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Clubs</a>
+                    </li>
+                </ul>
+
+
+                <!--   Show this only lg screens and up   -->
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                    <img src="assets/img/Logo.png" alt="">
+                </a>
+
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn  btn-lg btn-header" role="button" aria-disabled="true">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid jumbotron mb-0" style="height: 300px;">
+            <h1 class="heading-title"><span class="heading-title_white">ENSA</span>EVENTS</h1>
+            <h4 class="heading-subtitle">Keep track of all ensa's events</h4>
+        </div>
+    </div>
+
+    <div class="container search-bar position-absolute">
+        <form class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center padding-smallSize">
+                <select class="custom-select w-75 text-center" id="inputGroupSelect01">
+                    <option selected style="font-size: 1rem;">Select Club</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center padding-smallSize">
+                <label for="startDate" class="my-0 mr-2">Start Date</label>
+                <input type="date" class="text-center" id="startDate">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center padding-smallSize">
+                <label for="endDate" class="my-0 mr-2">End Date</label>
+                <input type="date" class="text-center" id="endDate">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center padding-smallSize">
+                <button type="button" class="btn search-btn rounded-pill w-75">Filter Events</button>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid bg-secondary" style="height: 280px;">
+
+
+    </div>
 
     <!-- Swiper -->
     <div class="swiper mySwiper">
@@ -50,6 +135,7 @@
 
     <!-- Main script -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

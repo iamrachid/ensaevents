@@ -1,3 +1,46 @@
-.header {
-    height: 70px;
+html, body{
+    font-family: "Nunito";
+    font-weight: 400;
+}
+.hero {
+    background: linear-gradient(45deg, rgba(173,225,255,1) 0%, rgba(186,175,255,1) 40%, rgba(175,255,182,1) 74%, rgba(175,255,182,1) 100%);
+}
+.btn-header {
+    font-size: 1rem;
+    background-color: #0d1821;
+    color: #fafafa;
+}
+.heading-title {
+    font-size: 5rem;
+    font-weight: 800;
+}
+@media only screen and (max-width: 768px) {
+    .heading-title {
+        font-size: 4rem;
+    }
+
+    .padding-smallSize {
+        padding: .5rem;
+    }
+}
+
+.heading-title_white {
+    color: #fafafa;
+}
+.heading-subtitle {
+    color: #fafafa;
+    letter-spacing: .2cm;
+}
+.search-bar {
+    padding: .51rem 0.5rem;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
+
+.search-btn {
+    background-color: #b2d0ff;
+    color: #fafafa;
+    font-weight: 600;
 }
