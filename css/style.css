@@ -9,16 +9,38 @@ html, body{
     font-size: 1rem;
     background-color: #0d1821;
     color: #fafafa;
-    border-radius: 15%;
 }
 .heading-title {
     font-size: 5rem;
     font-weight: 800;
 }
+@media only screen and (max-width: 768px) {
+    .heading-title {
+        font-size: 4rem;
+    }
+
+    .padding-smallSize {
+        padding: .5rem;
+    }
+}
+
 .heading-title_white {
     color: #fafafa;
 }
 .heading-subtitle {
     color: #fafafa;
     letter-spacing: .2cm;
+}
+.search-bar {
+    padding: .51rem 0.5rem;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
+
+.search-btn {
+    background-color: #b2d0ff;
+    color: #fafafa;
+    font-weight: 600;
 }
