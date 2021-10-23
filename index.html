@@ -5,19 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="classname">
-        <p class="haha">haha</p>
-    </div>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!--  Show this only on mobile to medium screens  -->
+          <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+        
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Clubs</a>
+              </li>
+            </ul>
+            
+            
+        <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-lg-block" href="#">
+              <img src="assets/img/Logo.png" alt="">
+            </a>
+            
+            
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
 
     <!-- JQuery -->
     <script src="js/jquery-3.6.0.js"></script>    
     <!-- Bootstrap -->
-    <script src="js/bootstrap.js"></script>
+    <script src="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.js"></script>
     <!-- Main script -->
     <script src="script.js"></script>
 </body>
