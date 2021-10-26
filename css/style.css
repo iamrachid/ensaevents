@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Forever;
+    src: url(../font/Foreverbrushscript-GwZy.otf);
+  }
+
 html, body{
     font-family: "Nunito";
     font-weight: 400;
@@ -43,4 +48,21 @@ html, body{
     background-color: #b2d0ff;
     color: #fafafa;
     font-weight: 600;
+}
+
+.card-img-box {
+    height: 12rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forever {
+    font-family: Forever;
+    font-size:2rem
+}
+
+.bg-color-blue {
+    background-color:#b2d0ff;
 }
