@@ -26,7 +26,7 @@ var swiper = new Swiper(".events", {
     autoplay: {
       delay: 3000,
       // TODO: this should be false
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     pagination: {
       el: ".swiper-pagination",
